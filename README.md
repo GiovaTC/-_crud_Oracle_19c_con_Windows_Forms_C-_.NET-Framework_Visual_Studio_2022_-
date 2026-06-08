@@ -1,7 +1,9 @@
 # -_crud_Oracle_19c_con_Windows_Forms_C-_.NET-Framework_Visual_Studio_2022_- :.
 CRUD Oracle 19c con Windows Forms C# (.NET Framework) - Visual Studio 2022:
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1920300d-a764-4932-8365-a91edbaa46a3" />  
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1920300d-a764-4932-8365-a91edbaa46a3" />    
+
+<img width="2554" height="1079" alt="image" src="https://github.com/user-attachments/assets/9b00d355-684e-4a82-8c91-fe1d2a830c7c" />    
 
 ```
 
