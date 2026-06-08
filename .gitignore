@@ -1,0 +1,206 @@
+# Visual Studio 2022 .gitignore
+
+# ==========================
+
+# Build Results
+
+# ==========================
+
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ==========================
+
+# Visual Studio
+
+# ==========================
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==========================
+
+# Visual Studio Code
+
+# ==========================
+
+.vscode/
+
+# ==========================
+
+# Rider
+
+# ==========================
+
+.idea/
+
+# ==========================
+
+# NuGet
+
+# ==========================
+
+packages/
+*.nupkg
+
+# Restore packages except build
+
+!**/packages/build/
+
+# NuGet Symbol Packages
+
+*.snupkg
+
+# ==========================
+
+# Test Results
+
+# ==========================
+
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ==========================
+
+# Azure
+
+# ==========================
+
+PublishProfiles/
+
+# ==========================
+
+# ReSharper
+
+# ==========================
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ==========================
+
+# SQL Server
+
+# ==========================
+
+*.mdf
+*.ldf
+
+# ==========================
+
+# Oracle
+
+# ==========================
+
+*.dmp
+*.exp
+*.expdp
+*.imp
+*.impdp
+
+# ==========================
+
+# Certificates
+
+# ==========================
+
+*.pfx
+*.cer
+*.snk
+
+# ==========================
+
+# Windows
+
+# ==========================
+
+Thumbs.db
+Desktop.ini
+
+# ==========================
+
+# Temporary Files
+
+# ==========================
+
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# ==========================
+
+# Publish Output
+
+# ==========================
+
+publish/
+Publish/
+
+# ==========================
+
+# Generated Files
+
+# ==========================
+
+Generated_Code/
+
+# ==========================
+
+# Entity Framework
+
+# ==========================
+
+*.edmx.diagram
+
+# ==========================
+
+# JetBrains Rider
+
+# ==========================
+
+*.sln.iml
+
+# ==========================
+
+# Coverage Reports
+
+# ==========================
+
+coverage/
+*.coverage
+*.coveragexml
+
+# ==========================
+
+# App Secrets
+
+# ==========================
+
+appsettings.Development.json
+secrets.json
+
+# ==========================
+
+# Database Connection Files
+
+# ==========================
+
+connectionStrings.config
+db.config
+
+# ==========================
+
+# Backup Files
+
+# ==========================
+
+*.backup
+*.old
+*.orig
