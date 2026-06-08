@@ -128,7 +128,7 @@ namespace crud_oracle_19c
         }
 
         private void btnActualizar_Click(
-            object sender, 
+            object sender,
             EventArgs e)
         {
             try
@@ -145,24 +145,24 @@ namespace crud_oracle_19c
 
                     OracleCommand cmd =
                         new OracleCommand(sql, cn);
-                    
+
                     cmd.Parameters.Add(":NOMBRE",
                         txtNombre.Text);
-                    
+
                     cmd.Parameters.Add(":EMAIL",
                         txtEmail.Text);
-                    
+
                     cmd.Parameters.Add(":TELEFONO",
                         txtTelefono.Text);
-                    
+
                     cmd.Parameters.Add(":ID",
                         txtId.Text);
-                    
+
                     cmd.ExecuteNonQuery();
-                    
+
                     MessageBox.Show(
                         "registro actualizado! ");
-                    
+
                     CargarDatos();
                 }
             }
@@ -172,6 +172,36 @@ namespace crud_oracle_19c
             }
         }
 
-            
-    }
+        private void btnEliminar_Click(
+            object sender,
+            EventArgs e)
+        {
+            try
+            {
+                using (OracleConnection cn =
+                    conexion.ObtenerConexion())
+                {
+                    string sql =
+                        "DELETE FROM CLIENTES_J WHERE ID = :ID";
+
+                    OracleCommand cmd =
+                        new OracleCommand(sql, cn);
+
+                    cmd.Parameters.Add(":ID",
+                        txtId.Text);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show(
+                        "registro eliminado! ");
+                    CargarDatos();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+    }   
 }
