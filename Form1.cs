@@ -203,5 +203,28 @@ namespace crud_oracle_19c
 
             }
         }
+
+        private void dgvClientes_CellClick(
+            object sender,
+            DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila =
+                    dgvClientes.Rows[e.RowIndex];
+
+                txtId.Text = 
+                    fila.Cells["ID"].Value.ToString();
+
+                txtNombre.Text = 
+                    fila.Cells["NOMBRE"].Value.ToString();
+                
+                txtEmail.Text = 
+                    fila.Cells["EMAIL"].Value.ToString();
+                
+                txtTelefono.Text = 
+                    fila.Cells["TELEFONO"].Value.ToString();
+            }
+        }
     }   
-}
+}   
