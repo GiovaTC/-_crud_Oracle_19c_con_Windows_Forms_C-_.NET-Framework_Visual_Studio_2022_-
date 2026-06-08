@@ -42,164 +42,155 @@
 
         private void InitializeComponent()
         {
-            this.lblId = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblTelefono = new System.Windows.Forms.Label();
-
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
-
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
-
-            this.SuspendLayout();
-
+            lblId = new Label();
+            lblNombre = new Label();
+            lblEmail = new Label();
+            lblTelefono = new Label();
+            txtId = new TextBox();
+            txtNombre = new TextBox();
+            txtEmail = new TextBox();
+            txtTelefono = new TextBox();
+            btnGuardar = new Button();
+            btnBuscar = new Button();
+            btnActualizar = new Button();
+            btnEliminar = new Button();
+            dgvClientes = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
+            SuspendLayout();
+            // 
             // lblId
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(30, 30);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(20, 15);
-            this.lblId.TabIndex = 0;
-            this.lblId.Text = "ID";
-
-            // txtId
-            this.txtId.Location = new System.Drawing.Point(120, 27);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(120, 23);
-            this.txtId.TabIndex = 1;
-
+            // 
+            lblId.AutoSize = true;
+            lblId.Location = new Point(30, 30);
+            lblId.Name = "lblId";
+            lblId.Size = new Size(18, 15);
+            lblId.TabIndex = 0;
+            lblId.Text = "ID";
+            // 
             // lblNombre
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(30, 70);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(56, 15);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre";
-
-            // txtNombre
-            this.txtNombre.Location = new System.Drawing.Point(120, 67);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(250, 23);
-            this.txtNombre.TabIndex = 3;
-
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(30, 70);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(51, 15);
+            lblNombre.TabIndex = 2;
+            lblNombre.Text = "Nombre";
+            // 
             // lblEmail
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(30, 110);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 4;
-            this.lblEmail.Text = "Email";
-
-            // txtEmail
-            this.txtEmail.Location = new System.Drawing.Point(120, 107);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(250, 23);
-            this.txtEmail.TabIndex = 5;
-
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(30, 110);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(36, 15);
+            lblEmail.TabIndex = 4;
+            lblEmail.Text = "Email";
+            // 
             // lblTelefono
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(30, 150);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(58, 15);
-            this.lblTelefono.TabIndex = 6;
-            this.lblTelefono.Text = "Teléfono";
-
+            // 
+            lblTelefono.AutoSize = true;
+            lblTelefono.Location = new Point(30, 150);
+            lblTelefono.Name = "lblTelefono";
+            lblTelefono.Size = new Size(53, 15);
+            lblTelefono.TabIndex = 6;
+            lblTelefono.Text = "Teléfono";
+            // 
+            // txtId
+            // 
+            txtId.Location = new Point(120, 27);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(120, 23);
+            txtId.TabIndex = 1;
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(120, 67);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(250, 23);
+            txtNombre.TabIndex = 3;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(120, 107);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(250, 23);
+            txtEmail.TabIndex = 5;
+            // 
             // txtTelefono
-            this.txtTelefono.Location = new System.Drawing.Point(120, 147);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(250, 23);
-            this.txtTelefono.TabIndex = 7;
-
+            // 
+            txtTelefono.Location = new Point(120, 147);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(250, 23);
+            txtTelefono.TabIndex = 7;
+            // 
             // btnGuardar
-            this.btnGuardar.Location = new System.Drawing.Point(30, 200);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(100, 35);
-            this.btnGuardar.TabIndex = 8;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-
+            // 
+            btnGuardar.Location = new Point(30, 200);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(100, 35);
+            btnGuardar.TabIndex = 8;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            // 
             // btnBuscar
-            this.btnBuscar.Location = new System.Drawing.Point(140, 200);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(100, 35);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-
+            // 
+            btnBuscar.Location = new Point(140, 200);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(100, 35);
+            btnBuscar.TabIndex = 9;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // btnActualizar
-            this.btnActualizar.Location = new System.Drawing.Point(250, 200);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(100, 35);
-            this.btnActualizar.TabIndex = 10;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-
+            // 
+            btnActualizar.Location = new Point(250, 200);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(100, 35);
+            btnActualizar.TabIndex = 10;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            // 
             // btnEliminar
-            this.btnEliminar.Location = new System.Drawing.Point(360, 200);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(100, 35);
-            this.btnEliminar.TabIndex = 11;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-
+            // 
+            btnEliminar.Location = new Point(360, 200);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(100, 35);
+            btnEliminar.TabIndex = 11;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            // 
             // dgvClientes
-            this.dgvClientes.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
-            this.dgvClientes.Location = new System.Drawing.Point(30, 260);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.RowTemplate.Height = 25;
-            this.dgvClientes.Size = new System.Drawing.Size(740, 220);
-            this.dgvClientes.TabIndex = 12;
-
+            // 
+            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvClientes.Location = new Point(30, 260);
+            dgvClientes.Name = "dgvClientes";
+            dgvClientes.Size = new Size(740, 220);
+            dgvClientes.TabIndex = 12;
+            // 
             // Form1
-            this.AutoScaleDimensions =
-                new System.Drawing.SizeF(7F, 15F);
-
-            this.AutoScaleMode =
-                System.Windows.Forms.AutoScaleMode.Font;
-
-            this.ClientSize =
-                new System.Drawing.Size(800, 520);
-
-            this.Controls.Add(this.lblId);
-            this.Controls.Add(this.txtId);
-
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.txtNombre);
-
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.txtEmail);
-
-            this.Controls.Add(this.lblTelefono);
-            this.Controls.Add(this.txtTelefono);
-
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.btnEliminar);
-
-            this.Controls.Add(this.dgvClientes);
-
-            this.Name = "Form1";
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterScreen;
-
-            this.Text = "CRUD Oracle 19c";
-
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 520);
+            Controls.Add(lblId);
+            Controls.Add(txtId);
+            Controls.Add(lblNombre);
+            Controls.Add(txtNombre);
+            Controls.Add(lblEmail);
+            Controls.Add(txtEmail);
+            Controls.Add(lblTelefono);
+            Controls.Add(txtTelefono);
+            Controls.Add(btnGuardar);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnActualizar);
+            Controls.Add(btnEliminar);
+            Controls.Add(dgvClientes);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "CRUD Oracle 19c";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
