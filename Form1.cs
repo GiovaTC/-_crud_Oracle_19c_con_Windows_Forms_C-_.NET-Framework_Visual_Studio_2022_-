@@ -126,5 +126,52 @@ namespace crud_oracle_19c
                 MessageBox.Show(ex.Message);
             }
         }
-    }   
+
+        private void btnActualizar_Click(
+            object sender, 
+            EventArgs e)
+        {
+            try
+            {
+                using (OracleConnection cn =
+                    conexion.ObtenerConexion())
+                {
+                    string sql =
+                        @"UPDATE CLIENTES_J 
+                        SET NOMBRE = :NOMBRE,
+                            EMAIL = :EMAIL,
+                            TELEFONO = :TELEFONO
+                        WHERE ID = :ID";
+
+                    OracleCommand cmd =
+                        new OracleCommand(sql, cn);
+                    
+                    cmd.Parameters.Add(":NOMBRE",
+                        txtNombre.Text);
+                    
+                    cmd.Parameters.Add(":EMAIL",
+                        txtEmail.Text);
+                    
+                    cmd.Parameters.Add(":TELEFONO",
+                        txtTelefono.Text);
+                    
+                    cmd.Parameters.Add(":ID",
+                        txtId.Text);
+                    
+                    cmd.ExecuteNonQuery();
+                    
+                    MessageBox.Show(
+                        "registro actualizado! ");
+                    
+                    CargarDatos();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+            
+    }
 }
