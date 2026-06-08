@@ -130,6 +130,7 @@
             btnGuardar.TabIndex = 8;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnBuscar
             // 
@@ -139,6 +140,7 @@
             btnBuscar.TabIndex = 9;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btnActualizar
             // 
